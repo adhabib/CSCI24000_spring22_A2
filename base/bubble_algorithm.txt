@@ -1,0 +1,31 @@
+the program is going to print an array of numbers. it will then look at the first number vs the second, and swap them if the first number is bigger. then print the new array. then move on to the next set of numbers, until the numbers are inorder.
+
+the input is the original array which will be unscrambled
+
+the outputs are each step of the array being unscrambled
+
+there will be specific functions for each step of unscrambling the array. 
+first we will define the array which we will unscramble. then we will define 
+our prototype functions. the first one is responsible for printing the array. 
+we will define an integer variable i, print a bracket, create a for loop. i 
+is set to the zero index, and as long as it is less than 9 which is defined 
+as MAX, it will print out the number, then add one to the index and keep 
+printing the number until we reach the ninth index and we stop. we print an 
+ending bracket, and new line. the next function is responsible for sorting the 
+array. it defines two integer variables, i and j. i and j are set to the zero 
+index and as long as they are not at or above the ninth index, the for loop 
+will keep going. every time the for loop loops, we add to the i and j indexes 
+to move to the next number. if the index of i is higher than the index of j, 
+we swap them using the swap function. which leads us onto the swap function. 
+in the function parameters we define the pointers for i and j. there is an 
+extra integer variable, n, which we set to the value which i's pointer points
+to. the value which i's pointer points to is set to j's pointer's value, to
+indicate the swap. j's pointer's value is set to n, and the swap is complete.
+then, we call the printvalues function to print the array. everytime the 
+sort decides the array is incomplete, this function is called. then we define
+the main function. first we print "before", to indicate the beginning. then 
+we call the printvalues function to print the original array. we then call the
+sort function and for each time it does a swap it will print the array thanks
+to how the function is set up. then we print "after", to indicate the finished
+array, and we call the printvalues function to print the modified and finished
+array. return 0 so the system doesn't do any weird things.
